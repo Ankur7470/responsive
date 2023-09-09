@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+
+}
+.navlist{
+    list-style-type: none;
+    width: 70%;
+    
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+}
+.logo img{
+    width: 30%;
+    border: 0.3rem solid white;
+    border-radius: 50px;
+}
+
+.navlist li{
+    list-style: none;
+    color: white;
+    padding: 2.7rem;  
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: white;
+}
+.navlist li a:hover{
+    color: grey;
+}
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 0 2.3rem;
+}
+#search{
+    padding: 0.6rem;
+    font-size: 1.8rem;
+    border: 0.2rem solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.8)url("image/pexels-tatiana-fet-1105766.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+}
+.firsthalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.secondhalf{
+    width: 20%;
+}
+.secondhalf img{
+    width: 70%;
+    border: 0.4rem solid white;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    
+}
+.text-big{
+    font-size: 3.5rem;
+}
+.text-small{
+    font-size: 1.6rem;
+}
+.btn{
+    margin: 0.7rem 0.3rem;
+    padding: 0.8rem 2rem;
+    border: 0.2rem solid white;
+    border-radius: 0.8rem;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+ .btn-sm{
+    padding:0.6rem 1rem;
+ 
+    cursor: pointer;
+    
+}
+button{
+    transition-duration: 2s;
+}
+button:active{
+    transform: translateY(300px);
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+}
+button:hover{
+    background-color: blue;
+    box-shadow:0 6px #999;
+}
+@media only screen and (max-width: 800px) {
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    #search{
+        width: 100%;
+    }
+    html{
+        width: 55%;
+    }
+}
+@media only screen and (max-width: 468px) {
+    html{
+        width: 35%;
+    }
+    
+}
